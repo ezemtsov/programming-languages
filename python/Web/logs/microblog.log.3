@@ -1,0 +1,92 @@
+2018-03-03 17:38:22,922 INFO: Microblog startup [in /Users/evgeny.zemtsov/Desktop/Programming-Languages/Python/Web/app/__init__.py:48]
+2018-03-03 17:38:43,211 ERROR: Exception on /edit_profile [POST] [in /usr/local/lib/python3.6/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1193, in _execute_context
+    context)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 507, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: UNIQUE constraint failed: user.username
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/evgeny.zemtsov/Desktop/Programming-Languages/Python/Web/app/routes.py", line 90, in edit_profile
+    db.session.commit()
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/orm/scoping.py", line 153, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 943, in commit
+    self.transaction.commit()
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 467, in commit
+    self._prepare_impl()
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 447, in _prepare_impl
+    self.session.flush()
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2243, in flush
+    self._flush(objects)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2369, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 66, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 187, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2333, in _flush
+    flush_context.execute()
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/orm/unitofwork.py", line 391, in execute
+    rec.execute(self)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/orm/unitofwork.py", line 556, in execute
+    uow
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/orm/persistence.py", line 177, in save_obj
+    mapper, table, update)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/orm/persistence.py", line 768, in _emit_update_statements
+    execute(statement, multiparams)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 948, in execute
+    return meth(self, multiparams, params)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/sql/elements.py", line 269, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1060, in _execute_clauseelement
+    compiled_sql, distilled_params
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1200, in _execute_context
+    context)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1413, in _handle_dbapi_exception
+    exc_info
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 203, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 186, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1193, in _execute_context
+    context)
+  File "/usr/local/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 507, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: user.username [SQL: 'UPDATE user SET username=?, about_me=? WHERE user.id = ?'] [parameters: ('susan', 'test', 2)] (Background on this error at: http://sqlalche.me/e/gkpj)
+2018-03-03 18:06:25,986 INFO: Microblog startup [in /Users/evgeny.zemtsov/Desktop/Programming-Languages/Python/Web/app/__init__.py:48]
+2018-03-04 21:14:39,867 INFO: Microblog startup [in /Users/evgeny.zemtsov/Desktop/Programming-Languages/Python/Web/app/__init__.py:48]
+2018-03-04 21:15:17,771 INFO: Microblog startup [in /Users/evgeny.zemtsov/Desktop/Programming-Languages/Python/Web/app/__init__.py:48]
+2018-03-04 22:04:08,059 INFO: Microblog startup [in /Users/evgeny.zemtsov/Desktop/Programming-Languages/Python/Web/app/__init__.py:48]
+2018-03-04 22:24:15,640 INFO: Microblog startup [in /Users/evgeny.zemtsov/Desktop/Programming-Languages/Python/Web/app/__init__.py:48]
+2018-03-04 23:17:01,149 INFO: Microblog startup [in /Users/evgeny.zemtsov/Desktop/Programming-Languages/Python/Web/app/__init__.py:48]
+2018-03-04 23:22:39,142 INFO: Microblog startup [in /Users/evgeny.zemtsov/Desktop/Programming-Languages/Python/Web/app/__init__.py:48]
+2018-03-05 11:11:01,413 INFO: Microblog startup [in /Users/evgeny.zemtsov/Desktop/Programming-Languages/Python/Web/app/__init__.py:48]
+2018-03-05 15:10:53,857 INFO: Microblog startup [in /Users/evgeny.zemtsov/Desktop/Programming-Languages/Python/Web/app/__init__.py:48]
+2018-03-05 15:10:59,338 INFO: Microblog startup [in /Users/evgeny.zemtsov/Desktop/Programming-Languages/Python/Web/app/__init__.py:48]
+2018-03-05 15:11:02,836 INFO: Microblog startup [in /Users/evgeny.zemtsov/Desktop/Programming-Languages/Python/Web/app/__init__.py:48]
+2018-03-05 15:16:04,506 INFO: Microblog startup [in /Users/evgeny.zemtsov/Desktop/Programming-Languages/Python/Web/app/__init__.py:48]
+2018-03-05 15:21:41,512 INFO: Microblog startup [in /Users/evgeny.zemtsov/Desktop/Programming-Languages/Python/Web/app/__init__.py:48]
+2018-03-05 15:24:35,647 INFO: Microblog startup [in /Users/evgeny.zemtsov/Desktop/Programming-Languages/Python/Web/app/__init__.py:48]
+2018-03-05 15:24:38,461 INFO: Microblog startup [in /Users/evgeny.zemtsov/Desktop/Programming-Languages/Python/Web/app/__init__.py:48]
+2018-03-05 15:24:44,729 INFO: Microblog startup [in /Users/evgeny.zemtsov/Desktop/Programming-Languages/Python/Web/app/__init__.py:48]
+2018-03-05 15:31:04,498 INFO: Microblog startup [in /Users/evgeny.zemtsov/Desktop/Programming-Languages/Python/Web/app/__init__.py:48]
+2018-03-05 15:46:30,732 INFO: Microblog startup [in /Users/evgeny.zemtsov/Desktop/Programming-Languages/Python/Web/app/__init__.py:48]
+2018-03-05 16:04:44,674 INFO: Microblog startup [in /Users/evgeny.zemtsov/Desktop/Programming-Languages/Python/Web/app/__init__.py:48]

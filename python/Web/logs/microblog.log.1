@@ -1,0 +1,139 @@
+2018-03-05 16:39:08,896 ERROR: Exception on /login [POST] [in /usr/local/lib/python3.6/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/evgeny.zemtsov/Desktop/Programming-Languages/Python/Web/app/routes.py", line 39, in login
+    login_user(user, remember=form.remcember_me.data)
+AttributeError: 'LoginForm' object has no attribute 'remcember_me'
+2018-03-05 16:40:40,910 INFO: Microblog startup [in /Users/evgeny.zemtsov/Desktop/Programming-Languages/Python/Web/app/__init__.py:48]
+2018-03-05 16:43:15,829 INFO: Microblog startup [in /Users/evgeny.zemtsov/Desktop/Programming-Languages/Python/Web/app/__init__.py:48]
+2018-03-05 16:44:54,019 INFO: Microblog startup [in /Users/evgeny.zemtsov/Desktop/Programming-Languages/Python/Web/app/__init__.py:48]
+2018-03-05 16:46:02,955 INFO: Microblog startup [in /Users/evgeny.zemtsov/Desktop/Programming-Languages/Python/Web/app/__init__.py:48]
+2018-03-05 16:49:24,240 INFO: Microblog startup [in /Users/evgeny.zemtsov/Desktop/Programming-Languages/Python/Web/app/__init__.py:48]
+2018-03-05 16:49:26,328 ERROR: Exception on /index [GET] [in /usr/local/lib/python3.6/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/evgeny.zemtsov/Desktop/Programming-Languages/Python/Web/app/routes.py", line 25, in index
+    posts = current_user.followed_posts().paginage(
+AttributeError: 'BaseQuery' object has no attribute 'paginage'
+2018-03-05 16:49:35,328 ERROR: Exception on /index [GET] [in /usr/local/lib/python3.6/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/evgeny.zemtsov/Desktop/Programming-Languages/Python/Web/app/routes.py", line 25, in index
+    posts = current_user.followed_posts().paginage(
+AttributeError: 'BaseQuery' object has no attribute 'paginage'
+2018-03-05 17:01:15,272 INFO: Microblog startup [in /Users/evgeny.zemtsov/Desktop/Programming-Languages/Python/Web/app/__init__.py:48]
+2018-03-05 17:01:18,148 ERROR: Exception on /index [GET] [in /usr/local/lib/python3.6/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/evgeny.zemtsov/Desktop/Programming-Languages/Python/Web/app/routes.py", line 25, in index
+    posts = current_user.followed_posts().paginage(
+AttributeError: 'BaseQuery' object has no attribute 'paginage'
+2018-03-05 17:04:04,285 INFO: Microblog startup [in /Users/evgeny.zemtsov/Desktop/Programming-Languages/Python/Web/app/__init__.py:48]
+2018-03-05 17:04:08,952 ERROR: Exception on / [GET] [in /usr/local/lib/python3.6/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/evgeny.zemtsov/Desktop/Programming-Languages/Python/Web/app/routes.py", line 25, in index
+    posts = current_user.followed_posts().paginage(
+AttributeError: 'BaseQuery' object has no attribute 'paginage'
+2018-03-05 17:09:37,648 INFO: Microblog startup [in /Users/evgeny.zemtsov/Desktop/Programming-Languages/Python/Web/app/__init__.py:48]
+2018-03-05 17:09:40,445 ERROR: Exception on / [GET] [in /usr/local/lib/python3.6/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/evgeny.zemtsov/Desktop/Programming-Languages/Python/Web/app/routes.py", line 25, in index
+    posts = current_user.followed_posts().paginage(
+AttributeError: 'BaseQuery' object has no attribute 'paginage'
+2018-03-05 17:12:33,419 ERROR: Exception on /index [GET] [in /usr/local/lib/python3.6/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/evgeny.zemtsov/Desktop/Programming-Languages/Python/Web/app/routes.py", line 25, in index
+    posts = current_user.followed_posts().paginage(
+AttributeError: 'BaseQuery' object has no attribute 'paginage'

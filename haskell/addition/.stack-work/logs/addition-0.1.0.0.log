@@ -1,0 +1,8 @@
+Configuring addition-0.1.0.0...
+Warning: 'hs-source-dirs: ../book/src' is a relative path outside of the
+source tree. This will not work when generating a tarball with 'sdist'.
+Preprocessing library for addition-0.1.0.0..
+Building library for addition-0.1.0.0..
+[1 of 1] Compiling Addition         ( Addition.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.4.0.1/build/Addition.o )
+Installing library in /home/ezemtsov/Desktop/programming-languages/haskell/addition/.stack-work/install/x86_64-linux-tinfo6/lts-13.6/8.6.3/lib/x86_64-linux-ghc-8.6.3/addition-0.1.0.0-FptrtjvRbdiE4TEMeLzbZW
+Registering library for addition-0.1.0.0..
