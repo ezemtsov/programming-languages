@@ -1,2 +1,7 @@
 _Trainings
 node_modules
+elm-stuff
+.stack-work
+__pycache__
+*.*~
+*.o
