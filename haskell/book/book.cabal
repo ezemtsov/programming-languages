@@ -43,6 +43,8 @@ library
               , time
               , QuickCheck
               , hspec
+              , text
+              , uuid
   default-language: Haskell2010
 
 executable book-exe
