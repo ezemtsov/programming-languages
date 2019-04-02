@@ -45,6 +45,9 @@ library
               , hspec
               , text
               , uuid
+              , wreq
+              , bytestring
+              , random
   default-language: Haskell2010
 
 executable book-exe

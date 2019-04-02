@@ -62,7 +62,7 @@ charToMorse c =
 
 stringToMorse :: String -> Maybe [Morse]
 stringToMorse s =
-  sequence $ fmap charToMorse s
+  traverse charToMorse s
 
 morseToChar :: Morse -> Maybe Char
 morseToChar m =
