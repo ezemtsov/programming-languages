@@ -30,7 +30,7 @@ intToDie n =
 
 rollDieThreeTimes :: (Die, Die, Die)
 rollDieThreeTimes = do
-  let s = mkStdGen 0
+  let s = mkStdGen 0 -- this is a random seed
       (d1, s1) = randomR (1, 6) s
       (d2, s2) = randomR (1, 6) s1
       (d3, _) = randomR (1, 6) s2
