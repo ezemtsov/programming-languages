@@ -1,4 +1,4 @@
-hmodule Main where
+module Main where
 
 f :: IO ()
 f = do
