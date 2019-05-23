@@ -45,9 +45,9 @@ prop_Caesar a i =
 test = do
   quickCheck prop_Caesar
 
-main = do
-  putStrLn "Provide a phrase to cipher"
-  input <- getLine
-  putStrLn "Provide a key"
-  key <- getLine
-  putStrLn $ caesar input (digitToInt $ (key !! 0))
+-- main' = do
+--   putStrLn "Provide a phrase to cipher"
+--   input <- getLine
+--   putStrLn "Provide a key"
+--   key <- getLine
+--   putStrLn $ caesar input (digitToInt $ (key !! 0))
